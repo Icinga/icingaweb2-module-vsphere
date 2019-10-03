@@ -34,7 +34,10 @@ class ImportSource extends ImportSourceHook
 
     public function listColumns()
     {
-        return $this->callOnManagedObject('getDefaultPropertySet');
+        return $this->callOnManagedObject('getDefaultPropertySet') + [
+            'folder',
+            'parent',
+        ];
     }
 
     protected function getManagedObjectClass()
