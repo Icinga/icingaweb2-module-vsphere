@@ -1,3 +1,4 @@
+Module: vsphere
 Name: vSphere
 Version: 1.1.0
 Depends: director>=1.3.0
