@@ -298,7 +298,7 @@ class CurlLoader
             return $len;
         }
 
-        if ($header[0] === 'Set-Cookie') {
+        if (\strtolower($header[0]) === 'set-cookie') {
             $cookie = trim($header[1]);
             if ($this->persistCookies) {
                 file_put_contents($this->cookieFile, $cookie);
