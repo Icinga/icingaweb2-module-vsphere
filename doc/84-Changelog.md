@@ -1,6 +1,11 @@
 <a id="Changelog"></a>Changelog
 ===============================
 
+1.1.1
+-----
+
+Fixes authentication problems with VMware 7.x and other little issues
+
 1.1.0
 -----
 
